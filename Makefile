@@ -1,5 +1,5 @@
 PKG_NAME := mutagen
-URL = https://files.pythonhosted.org/packages/c0/17/e1c3c18f5d637ebebcb94aa19d74c8c06925cb4ffb9f1031fe5f21a698d3/mutagen-1.41.1.tar.gz
+URL = https://files.pythonhosted.org/packages/30/4c/5ad1a6e1ccbcfaf6462db727989c302d9d721beedd9b09c11e6f0c7065b0/mutagen-1.42.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
