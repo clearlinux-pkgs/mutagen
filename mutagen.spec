@@ -4,7 +4,7 @@
 #
 Name     : mutagen
 Version  : 1.43.0
-Release  : 7
+Release  : 8
 URL      : https://files.pythonhosted.org/packages/aa/fd/ed738775442e3614849fefdf41417d7bff3ccb010d49c8f729432cc3c1e5/mutagen-1.43.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/aa/fd/ed738775442e3614849fefdf41417d7bff3ccb010d49c8f729432cc3c1e5/mutagen-1.43.0.tar.gz
 Summary  : read and write audio tags for many formats
