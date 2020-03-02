@@ -4,7 +4,7 @@
 #
 Name     : mutagen
 Version  : 1.44.0
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/96/9f/280220926cabbf4822f80e094a5190fb3df245209648e169c8bcf708697b/mutagen-1.44.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/96/9f/280220926cabbf4822f80e094a5190fb3df245209648e169c8bcf708697b/mutagen-1.44.0.tar.gz
 Summary  : read and write audio tags for many formats
@@ -18,7 +18,34 @@ Requires: mutagen-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 
 %description
-Don't change things here, this is a copy of https://github.com/lazka/senf
+.. image:: https://cdn.rawgit.com/quodlibet/mutagen/master/docs/images/logo.svg
+   :align: center
+   :width: 400px
+
+|
+
+Mutagen is a Python module to handle audio metadata. It supports ASF, FLAC,
+MP4, Monkey's Audio, MP3, Musepack, Ogg Opus, Ogg FLAC, Ogg Speex, Ogg Theora,
+Ogg Vorbis, True Audio, WavPack, OptimFROG, and AIFF audio files. All
+versions of ID3v2 are supported, and all standard ID3v2.4 frames are parsed.
+It can read Xing headers to accurately calculate the bitrate and length of
+MP3s. ID3 and APEv2 tags can be edited regardless of audio format. It can also
+manipulate Ogg streams on an individual packet/page level.
+
+Mutagen works with Python 3.5+ (CPython and PyPy) on Linux, Windows and
+macOS, and has no dependencies outside the Python standard library. Mutagen
+is licensed under the GPL version 2 or later.
+
+For more information visit https://mutagen.readthedocs.org
+
+.. image:: https://travis-ci.org/quodlibet/mutagen.svg?branch=master
+    :target: https://travis-ci.org/quodlibet/mutagen
+
+.. image:: https://dev.azure.com/quodlibet/mutagen/_apis/build/status/quodlibet.mutagen
+    :target: https://dev.azure.com/quodlibet/mutagen/_build/latest?definitionId=3
+
+.. image:: https://codecov.io/gh/quodlibet/mutagen/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/quodlibet/mutagen
 
 %package bin
 Summary: bin components for the mutagen package.
@@ -58,6 +85,7 @@ python components for the mutagen package.
 Summary: python3 components for the mutagen package.
 Group: Default
 Requires: python3-core
+Provides: pypi(mutagen)
 
 %description python3
 python3 components for the mutagen package.
@@ -72,7 +100,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581344069
+export SOURCE_DATE_EPOCH=1583175305
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
